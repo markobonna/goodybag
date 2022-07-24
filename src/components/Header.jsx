@@ -2,11 +2,11 @@ import { Fragment } from 'react'
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
-
-import { Button } from '../components/Button'
-import { Container } from '../components/Container'
-import { Logo } from '../components/Logo'
-import { NavLink } from '../components/NavLink'
+import { useAddress, useDisconnect, useMetamask } from '@thirdweb-dev/react'
+import { Button } from '@/components/Button'
+import { Container } from '@/components/Container'
+import { Logo } from '@/components/Logo'
+import { NavLink } from '@/components/NavLink'
 
 function MobileNavLink({ href, children }) {
   return (
@@ -90,6 +90,10 @@ function MobileNavigation() {
 }
 
 export function Header() {
+  const address = useAddress()
+  const connectWithMetamask = useMetamask()
+  const disconnectWallet = useDisconnect()
+
   return (
     <header className="py-10">
       <Container>
@@ -113,6 +117,27 @@ export function Header() {
                 Get started <span className="hidden lg:inline">today</span>
               </span>
             </Button>
+            <Button href="/users" color="blue">
+              <span>Login</span>
+            </Button>
+            <Button href="/users" color="blue">
+              <span>Login</span>
+            </Button>
+
+            <div>
+              {address ? (
+                <>
+                  <Button color="blue" onClick={disconnectWallet}>
+                    Disconnect Wallet
+                  </Button>
+                </>
+              ) : (
+                <Button color="blue" onClick={connectWithMetamask}>
+                  Connect with Metamask
+                </Button>
+              )}
+            </div>
+
             <div className="-mr-1 md:hidden">
               <MobileNavigation />
             </div>
