@@ -57,6 +57,23 @@ function NewCampaign() {
                   htmlFor="username"
                   className="block text-sm font-medium text-gray-700"
                 >
+                  Polygon NFT community Contract #
+                </label>
+                <div className="mt-1 flex rounded-md shadow-sm">
+                  <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    autoComplete="username"
+                    className="block  min-w-0 flex-1 rounded-none rounded-r-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  />
+                </div>
+              </div>
+              <div className="sm:col-span-4">
+                <label
+                  htmlFor="username"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Rare Reward Price
                 </label>
                 <div className="mt-1 flex rounded-md shadow-sm">

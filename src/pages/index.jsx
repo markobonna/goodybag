@@ -17,20 +17,15 @@ export default function Home() {
         <title>Goody Bag</title>
         <meta
           name="description"
-          content="Digital community based advertising for consumer brands.."
+          content="Digital community based advertising for consumer brands."
         />
       </Head>
 
       <main>
         <Hero />
-        <PrimaryFeatures />
+
         <SecondaryFeatures />
-        <CallToAction />
-        <Testimonials />
-        <Pricing />
-        <Faqs />
       </main>
-      <Footer />
     </>
   )
 }
