@@ -9,7 +9,7 @@ const locations = [
       {
         name: 'Makeup Happy Hour',
         title: 'Express manicure & makeup application.',
-        email: '$100 USD',
+        email: '$200 MATIC',
         role: '40/50',
         status: 'Active',
       },
@@ -19,9 +19,9 @@ const locations = [
     name: 'Services',
     people: [
       {
-        name: 'Lindsay Walton',
-        title: 'Front-end Developer',
-        email: 'lindsay.walton@example.com',
+        name: 'Oasis Day Spa',
+        title: 'Total Body Wellness Spa Package',
+        email: '$500 USD',
         role: '500/1000',
         status: 'Active',
       },
@@ -31,9 +31,9 @@ const locations = [
     name: 'Products',
     people: [
       {
-        name: 'Lindsay Walton',
-        title: 'Front-end Developer',
-        email: 'lindsay.w1alton@example.com',
+        name: 'The INKEY List',
+        title: 'Retinol Anti-Aging Serum',
+        email: '$175 MATIC',
         role: '1000/1500',
         status: 'Active',
       },
@@ -52,11 +52,11 @@ function Brands() {
         <div className="sm:flex sm:items-center">
           <div className="sm:flex-auto">
             <h1 className="text-xl font-semibold text-gray-900">
-              Your Brand's GoodyBag Campaigns
+              Oasis Day Spa's GoodyBag Campaigns
             </h1>
             <p className="mt-2 text-sm text-gray-700">
-              A list of all the Event, Services, and Product Campaigns your
-              brand has run.
+              A list of all your brand's Events, Services, and Product
+              Campaigns.
             </p>
           </div>
           <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
@@ -102,12 +102,6 @@ function Brands() {
                       >
                         Status
                       </th>
-                      <th
-                        scope="col"
-                        className="relative py-3.5 pl-3 pr-4 sm:pr-6"
-                      >
-                        <span className="sr-only">Edit</span>
-                      </th>
                     </tr>
                   </thead>
                   <tbody className="bg-white">
@@ -148,15 +142,6 @@ function Brands() {
                               <span className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
                                 {person.status}
                               </span>
-                            </td>
-                            <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                              <a
-                                href="#"
-                                className="text-indigo-600 hover:text-indigo-900"
-                              >
-                                Edit
-                                <span className="sr-only">, {person.name}</span>
-                              </a>
                             </td>
                           </tr>
                         ))}

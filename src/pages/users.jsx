@@ -5,36 +5,36 @@ import { Container } from '@/components/Container'
 const products = [
   {
     id: 1,
-    name: 'Zip Tote Basket',
+    name: 'Makeup Happy Hour',
     details:
       'One evening, two services! Get an express manicure featuring summer ready LE VERNIS shades and a 20-minute makeup application with a beauty pro in this special edition of our classic Makeup Happy Hour.',
     href: '#',
     imageSrc:
       'https://images.prismic.io/atelier/2bbddc62-7b6b-44e0-898e-a2ba52df79b3_Events-Landing_Desktop.gif',
-    imageAlt: 'ss.',
-    price: '$100 USD',
+    imageAlt: 'Express manicure & makeup application.',
+    price: '$200 MATIC',
   },
   {
     id: 2,
-    name: 'Zip Tote Basket',
-    details: 'White and black',
+    name: 'Total Body Wellness Spa Package',
+    details:
+      '30 Minute Body Scrub, 60 Minute Body Wrap, 90 Minute Swedish Massage, 60 Minute Signature Facial, Revitalizing Eye Treatment',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
-    imageAlt:
-      'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
-    price: '$140',
+      'https://www.oasisdayspanyc.com/wp-content/uploads/2016/04/lounge-room-1.jpg',
+    imageAlt: 'Total Body Wellness Spa Package.',
+    price: '$500 USD',
   },
   {
     id: 3,
-    name: 'Zip Tote Basket',
-    details: 'White and black',
+    name: 'Retinol Anti-Aging Serum',
+    details:
+      'A powerful retinol that is released slowly to help promote a smoother, more radiant complexion—with less irritation.',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
-    imageAlt:
-      'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
-    price: '$140',
+      'https://www.sephora.com/productimages/sku/s2211498-main-zoom.jpg?imwidth=1224',
+    imageAlt: 'The INKEY List.',
+    price: '$175 MATIC',
   },
 ]
 
@@ -79,7 +79,7 @@ function Users() {
                     href={product.href}
                     className="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 py-2 px-8 text-sm font-medium text-gray-900 hover:bg-gray-200"
                   >
-                    Add<span className="sr-only">, {product.name}</span>
+                    Redeem<span className="sr-only">, {product.name}</span>
                   </a>
                 </div>
               </div>
