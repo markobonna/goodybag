@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { useAddress, useDisconnect, useMetamask } from '@thirdweb-dev/react'
+
 import { CallToAction } from '@/components/CallToAction'
 import { Faqs } from '@/components/Faqs'
 import { Footer } from '@/components/Footer'
@@ -11,17 +11,13 @@ import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { Testimonials } from '@/components/Testimonials'
 
 export default function Home() {
-  const address = useAddress()
-  const connectWithMetamask = useMetamask()
-  const disconnectWallet = useDisconnect()
-
   return (
     <>
       <Head>
-        <title>TaxPal - Accounting made simple for small businesses</title>
+        <title>Goody Bag</title>
         <meta
           name="description"
-          content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
+          content="Digital community based advertising for consumer brands.."
         />
       </Head>
 
