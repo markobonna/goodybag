@@ -103,6 +103,7 @@ export function Header() {
               <Logo className="h-10 w-auto" />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
+              <NavLink href="/">Home</NavLink>
               <NavLink href="/brands">For Brands</NavLink>
               <NavLink href="/users">Users</NavLink>
             </div>
@@ -111,17 +112,7 @@ export function Header() {
             <div className="hidden md:block">
               <NavLink href="/login">Sign in</NavLink>
             </div>
-            <Button href="/register" color="blue">
-              <span>
-                Get started <span className="hidden lg:inline">today</span>
-              </span>
-            </Button>
-            <Button href="/users" color="blue">
-              <span>Login</span>
-            </Button>
-            <Button href="/users" color="blue">
-              <span>Login</span>
-            </Button>
+            <NavLink href="/register">Get started today</NavLink>
 
             <div>
               {address ? (
