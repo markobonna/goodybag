@@ -1,4 +1,5 @@
 import { Fragment } from 'react'
+import { Button } from '../components/Button'
 
 const locations = [
   {
@@ -9,12 +10,7 @@ const locations = [
         title: 'Front-end Developer',
         email: 'lindsay.walton@example.com',
         role: 'Member',
-      },
-      {
-        name: 'Courtney Henry',
-        title: 'Designer',
-        email: 'courtney.henry@example.com',
-        role: 'Admin',
+        status: 'Active',
       },
     ],
   },
@@ -26,12 +22,7 @@ const locations = [
         title: 'Front-end Developer',
         email: 'lindsay.walton@example.com',
         role: 'Member',
-      },
-      {
-        name: 'Courtney Henry',
-        title: 'Designer',
-        email: 'courtney.henry@example.com',
-        role: 'Admin',
+        status: 'Active',
       },
     ],
   },
@@ -43,12 +34,7 @@ const locations = [
         title: 'Front-end Developer',
         email: 'lindsay.walton@example.com',
         role: 'Member',
-      },
-      {
-        name: 'Courtney Henry',
-        title: 'Designer',
-        email: 'courtney.henry@example.com',
-        role: 'Admin',
+        status: 'Active',
       },
     ],
   },
@@ -64,7 +50,7 @@ function Brands() {
       <div className="sm:flex sm:items-center">
         <div className="sm:flex-auto">
           <h1 className="text-xl font-semibold text-gray-900">
-            Your Brand's Goody Bag Campaigns
+            Your Brand's GoodyBag Campaigns
           </h1>
           <p className="mt-2 text-sm text-gray-700">
             A list of all the Event, Services, and Product Campaigns your brand
@@ -72,12 +58,9 @@ function Brands() {
           </p>
         </div>
         <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
-          <button
-            type="button"
-            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
-          >
-            Add user
-          </button>
+          <Button href="/newcampaign" color="blue">
+            <span>Create a New Campaign</span>
+          </Button>
         </div>
       </div>
       <div className="mt-8 flex flex-col">
@@ -90,9 +73,7 @@ function Brands() {
                     <th
                       scope="col"
                       className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6"
-                    >
-                      Name
-                    </th>
+                    ></th>
                     <th
                       scope="col"
                       className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
@@ -161,7 +142,7 @@ function Brands() {
                           </td>
                           <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                             <span className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
-                              Active
+                              {person.status}
                             </span>
                           </td>
                           <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
