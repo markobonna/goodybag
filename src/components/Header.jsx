@@ -104,6 +104,7 @@ export function Header() {
               <NavLink href="/">Home</NavLink>
               <NavLink href="/brands">For Brands</NavLink>
               <NavLink href="/users">Users</NavLink>
+              <NavLink href="">Search NFT Collections</NavLink>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
