@@ -60,7 +60,7 @@ function Brands() {
             </p>
           </div>
           <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
-            <Button href="/newcampaign" color="blue">
+            <Button href="" color="blue">
               <span>Create a New Campaign</span>
             </Button>
           </div>
